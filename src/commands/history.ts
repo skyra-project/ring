@@ -1,12 +1,15 @@
-import { LanguageKeys } from '#lib/i18n/LanguageKeys';
 import { EmbedBuilder } from '@discordjs/builders';
 import { Command, RegisterCommand } from '@skyra/http-framework';
-import { applyLocalizedBuilder, resolveKey, type TypedT } from '@skyra/http-framework-i18n';
+import { resolveKey, type TypedT } from '@skyra/http-framework-i18n';
 
 @RegisterCommand((builder) =>
-	applyLocalizedBuilder(builder, LanguageKeys.Commands.History.RootName, LanguageKeys.Commands.History.RootDescription) //
+	builder
+		.setName('history')
+		.setDescription("Get a random bit of information about a character's backstory")
 		.addStringOption((builder) =>
-			applyLocalizedBuilder(builder, LanguageKeys.Commands.History.OptionsCharacter)
+			builder
+				.setName('character')
+				.setDescription('The character to get information about')
 				.setRequired(true)
 				.setChoices(
 					{ name: Character.Nova, value: Character.Nova },

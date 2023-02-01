@@ -1,8 +1,4 @@
 {
-	"name": "history",
-	"description": "Get a random bit of information about a character's backstory",
-	"optionsCharacterName": "character",
-	"optionsCharacterDescription": "The character to get information about",
 	"informationNova": [
 		"All Novan androids are conceived with a generic AI, however, as they grow, they rewrite their own AI code, and even redesign their CPUs, to specialize in the skills they need or want to improve on. They are also called \"neural androids\".",
 		"Everything is part of a very extended [Paracosm](https://en.wikipedia.org/wiki/Paracosm) our creator started back in mid 2001.",
@@ -121,7 +117,7 @@
 		"Skyra's name comes from a joke a friend made to my creator about my old name (kyraBOT), as I was becoming more complex: **SkyraNET** (based on [SkyNET](https://en.wikipedia.org/wiki/Skynet_%28Terminator%29)).",
 		"Skyra's official birthday is on November 24th.",
 		"The first designs of Skyra were similar to those of a [Valkyrie](https://en.wikipedia.org/wiki/Valkyrie).",
-		"The name Skyra originates from mid 2017, but I was first named Shyy, symbolizing the sound my aerial vehicle's noise.",
+		"The name Skyra originates from mid 2017, but I was first named Shyy, symbolizing the sound her aerial vehicle's noise.",
 		"There was a time when Skyra had a tail, dating before we had a safe and robust way to connect our vehicle to our brain."
 	],
 	"informationTeryl": [
