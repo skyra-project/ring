@@ -45,9 +45,9 @@ console.log(
 			],
 			name: [
 				String.raw`    _______   ________   _______   _______ `,
-				String.raw`  ╱╱       ╲ ╱        ╲╱╱   ╱   ╲╱╱       ╲ `,
-				String.raw` ╱╱        ╱_╱       ╱╱╱        ╱╱      __╱ `,
-				String.raw`╱        _╱╱         ╱         ╱       ╱ ╱ `,
+				String.raw`  ╱╱       ╲ ╱__   __ ╲╱╱   ╱   ╲╱╱       ╲ `,
+				String.raw` ╱╱   ╱╱   ╱_╱       ╱╱╱   ╱    ╱╱      __╱ `,
+				String.raw`╱      ╲__╱╱__   __  ╱   ╱     ╱       ╱ ╱ `,
 				String.raw`╲____╱___╱ ╲╲_______╱╲__╱_____╱╲________╱ `,
 				String.raw`                            ArchId Ring™️`
 			],
@@ -60,4 +60,5 @@ console.log(
 		})
 	)
 );
+
 container.logger.info('Ready');
