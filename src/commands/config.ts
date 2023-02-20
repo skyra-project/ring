@@ -16,14 +16,12 @@ export class UserCommand extends Command {
 	@RegisterSubCommand((builder) => builder.setName('get').setDescription("Gets a guild's features").addStringOption(getGuildOption))
 	public async get(interaction: Command.ChatInputInteraction, options: Options) {
 		if (!UserCommand.ClientOwners.includes(interaction.user.id)) {
-			const content = 'You cannot use this command.';
-			return interaction.reply({ content, flags: MessageFlags.Ephemeral });
+			return interaction.reply({ content: 'You cannot use this command.', flags: MessageFlags.Ephemeral });
 		}
 
 		const data = await this.container.prisma.guild.findFirst({ where: { id: BigInt(options.guild) } });
 		if (isNullish(data)) {
-			const content = 'There is no data recorded for that guild.';
-			return interaction.reply({ content, flags: MessageFlags.Ephemeral });
+			return interaction.reply({ content: 'There is no data recorded for that guild.', flags: MessageFlags.Ephemeral });
 		}
 
 		const lines = [
@@ -54,8 +52,7 @@ export class UserCommand extends Command {
 	)
 	public async set(interaction: Command.ChatInputInteraction, options: SetOptions) {
 		if (!UserCommand.ClientOwners.includes(interaction.user.id)) {
-			const content = 'You cannot use this command.';
-			return interaction.reply({ content, flags: MessageFlags.Ephemeral });
+			return interaction.reply({ content: 'You cannot use this command.', flags: MessageFlags.Ephemeral });
 		}
 
 		const id = BigInt(options.guild);
@@ -78,16 +75,14 @@ export class UserCommand extends Command {
 		} catch (error) {
 			this.container.logger.error(error);
 
-			const content = 'I was not able to update the configuration, please check my logs and/or try again later.';
-			return interaction.reply({ content, flags: MessageFlags.Ephemeral });
+			return interaction.reply({ content: 'I was not able to update the configuration, please check my logs and/or try again later.', flags: MessageFlags.Ephemeral });
 		}
 	}
 
 	@RegisterSubCommand((builder) => builder.setName('reset').setDescription("Resets a guild's features").addStringOption(getGuildOption))
 	public async reset(interaction: Command.ChatInputInteraction, options: Options) {
 		if (!UserCommand.ClientOwners.includes(interaction.user.id)) {
-			const content = 'You cannot use this command.';
-			return interaction.reply({ content, flags: MessageFlags.Ephemeral });
+			return interaction.reply({ content: 'You cannot use this command.', flags: MessageFlags.Ephemeral });
 		}
 
 		const data = await this.container.prisma.guild.delete({ where: { id: BigInt(options.guild) } });
