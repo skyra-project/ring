@@ -75,7 +75,10 @@ export class UserCommand extends Command {
 		} catch (error) {
 			this.container.logger.error(error);
 
-			return interaction.reply({ content: 'I was not able to update the configuration, please check my logs and/or try again later.', flags: MessageFlags.Ephemeral });
+			return interaction.reply({
+				content: 'I was not able to update the configuration, please check my logs and/or try again later.',
+				flags: MessageFlags.Ephemeral
+			});
 		}
 	}
 
