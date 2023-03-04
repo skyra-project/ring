@@ -1,8 +1,9 @@
 import { setup as envSetup } from '@skyra/env-utilities';
-import { setRepository } from '@skyra/shared-http-pieces';
+import { initializeSentry, setRepository } from '@skyra/shared-http-pieces';
 
 envSetup(new URL('../../../src/.env', import.meta.url));
 setRepository('ring');
+initializeSentry();
 
 import '#lib/setup/fastify';
 import '#lib/setup/logger';
