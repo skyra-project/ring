@@ -14,7 +14,6 @@ await init({ fallbackLng: 'en-US', returnNull: false, returnObjects: true, retur
 
 const client = new Client();
 await client.load();
-client.on('error', (error) => container.logger.error(error));
 
 await container.server.listen({
 	host: envParseString('API_ADDRESS'),
