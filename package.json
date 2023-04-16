@@ -33,7 +33,7 @@
 		"@sapphire/utilities": "^3.11.1",
 		"@skyra/env-utilities": "^1.2.0",
 		"@skyra/http-framework": "^0.15.5",
-		"@skyra/http-framework-i18n": "^0.6.2",
+		"@skyra/http-framework-i18n": "^1.0.0",
 		"@skyra/logger": "^1.0.1",
 		"@skyra/shared-http-pieces": "^0.6.2",
 		"@skyra/start-banner": "^1.0.2",
