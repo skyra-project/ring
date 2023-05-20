@@ -2,6 +2,22 @@ import { EmbedBuilder } from '@discordjs/builders';
 import { Command, RegisterCommand } from '@skyra/http-framework';
 import { resolveKey, type TypedT } from '@skyra/http-framework-i18n';
 
+const enum Character {
+	Nova = 'Nova',
+	Acrysel = 'Acrysel',
+	Aelia = 'Aelia',
+	Alestra = 'Alestra',
+	Artiel = 'Artiel',
+	Crysrel = 'Crysrel',
+	Evlyn = 'Evlyn',
+	Iriss = 'Iriss',
+	Nayre = 'Nayre',
+	Nekokai = 'Nekokai',
+	Ring = 'Ring',
+	Skyra = 'Skyra',
+	Teryl = 'Teryl'
+}
+
 @RegisterCommand((builder) =>
 	builder
 		.setName('history')
@@ -41,22 +57,6 @@ export class UserCommand extends Command {
 
 interface Options {
 	character: Character;
-}
-
-const enum Character {
-	Nova = 'Nova',
-	Acrysel = 'Acrysel',
-	Aelia = 'Aelia',
-	Alestra = 'Alestra',
-	Artiel = 'Artiel',
-	Crysrel = 'Crysrel',
-	Evlyn = 'Evlyn',
-	Iriss = 'Iriss',
-	Nayre = 'Nayre',
-	Nekokai = 'Nekokai',
-	Ring = 'Ring',
-	Skyra = 'Skyra',
-	Teryl = 'Teryl'
 }
 
 const Colors = {
