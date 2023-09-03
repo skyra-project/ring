@@ -28,7 +28,7 @@
 	"dependencies": {
 		"@discordjs/builders": "^1.6.3",
 		"@discordjs/collection": "^1.5.1",
-		"@prisma/client": "^4.16.2",
+		"@prisma/client": "^5.2.0",
 		"@sapphire/result": "^2.6.4",
 		"@sapphire/utilities": "^3.13.0",
 		"@skyra/env-utilities": "^1.2.1",
@@ -59,7 +59,7 @@
 		"husky": "^8.0.3",
 		"lint-staged": "^14.0.1",
 		"prettier": "^3.0.3",
-		"prisma": "^4.16.2",
+		"prisma": "^5.2.0",
 		"typescript": "^5.2.2"
 	},
 	"resolutions": {
