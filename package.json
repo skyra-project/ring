@@ -28,7 +28,7 @@
 	"dependencies": {
 		"@discordjs/builders": "^1.6.5",
 		"@discordjs/collection": "^1.5.3",
-		"@prisma/client": "^5.2.0",
+		"@prisma/client": "^5.3.1",
 		"@sapphire/result": "^2.6.4",
 		"@sapphire/utilities": "^3.13.0",
 		"@skyra/env-utilities": "^1.2.1",
@@ -38,7 +38,7 @@
 		"@skyra/shared-http-pieces": "^1.0.5",
 		"@skyra/start-banner": "^2.0.0",
 		"discord-api-types": "^0.37.56",
-		"fastify": "^4.22.2",
+		"fastify": "^4.23.2",
 		"gradient-string": "^2.0.2",
 		"tslib": "^2.6.2"
 	},
@@ -49,9 +49,9 @@
 		"@sapphire/prettier-config": "^2.0.0",
 		"@sapphire/ts-config": "^5.0.0",
 		"@types/gradient-string": "^1.1.2",
-		"@types/node": "^20.6.0",
-		"@typescript-eslint/eslint-plugin": "^6.6.0",
-		"@typescript-eslint/parser": "^6.6.0",
+		"@types/node": "^20.6.2",
+		"@typescript-eslint/eslint-plugin": "^6.7.0",
+		"@typescript-eslint/parser": "^6.7.0",
 		"cz-conventional-changelog": "^3.3.0",
 		"eslint": "^8.49.0",
 		"eslint-config-prettier": "^9.0.0",
@@ -59,7 +59,7 @@
 		"husky": "^8.0.3",
 		"lint-staged": "^14.0.1",
 		"prettier": "^3.0.3",
-		"prisma": "^5.2.0",
+		"prisma": "^5.3.1",
 		"typescript": "^5.2.2"
 	},
 	"resolutions": {
