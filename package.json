@@ -36,7 +36,7 @@
 		"@skyra/logger": "^2.0.1",
 		"@skyra/shared-http-pieces": "^1.1.0",
 		"@skyra/start-banner": "^2.0.0",
-		"discord-api-types": "^0.37.60",
+		"discord-api-types": "^0.37.61",
 		"fastify": "^4.24.3",
 		"gradient-string": "^2.0.2",
 		"tslib": "^2.6.2"
@@ -88,7 +88,7 @@
 			"@typescript-eslint/no-base-to-string": "off"
 		}
 	},
-	"packageManager": "yarn@3.6.4",
+	"packageManager": "yarn@4.0.1",
 	"volta": {
 		"node": "18.18.2"
 	}
