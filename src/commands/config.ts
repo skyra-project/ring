@@ -1,7 +1,7 @@
 import { SlashCommandIntegerOption, SlashCommandStringOption } from '@discordjs/builders';
 import { codeBlock, isNullish } from '@sapphire/utilities';
 import { envParseArray } from '@skyra/env-utilities';
-import { Command, RegisterCommand, RegisterSubCommand } from '@skyra/http-framework';
+import { Command, RegisterCommand, RegisterSubcommand } from '@skyra/http-framework';
 import { blue, bold, red, yellow } from '@skyra/logger';
 import { MessageFlags, PermissionFlagsBits } from 'discord-api-types/v10';
 
@@ -13,7 +13,7 @@ import { MessageFlags, PermissionFlagsBits } from 'discord-api-types/v10';
 		.setDefaultMemberPermissions(PermissionFlagsBits.Administrator)
 )
 export class UserCommand extends Command {
-	@RegisterSubCommand((builder) => builder.setName('get').setDescription("Gets a guild's features").addStringOption(getGuildOption))
+	@RegisterSubcommand((builder) => builder.setName('get').setDescription("Gets a guild's features").addStringOption(getGuildOption))
 	public async get(interaction: Command.ChatInputInteraction, options: Options) {
 		if (!UserCommand.ClientOwners.includes(interaction.user.id)) {
 			return interaction.reply({ content: 'You cannot use this command.', flags: MessageFlags.Ephemeral });
@@ -37,7 +37,7 @@ export class UserCommand extends Command {
 		return interaction.reply({ content: codeBlock('ansi', lines.join('\n')), flags: MessageFlags.Ephemeral });
 	}
 
-	@RegisterSubCommand((builder) =>
+	@RegisterSubcommand((builder) =>
 		builder
 			.setName('set')
 			.setDescription("Updates a guild's features")
@@ -82,7 +82,7 @@ export class UserCommand extends Command {
 		}
 	}
 
-	@RegisterSubCommand((builder) => builder.setName('reset').setDescription("Resets a guild's features").addStringOption(getGuildOption))
+	@RegisterSubcommand((builder) => builder.setName('reset').setDescription("Resets a guild's features").addStringOption(getGuildOption))
 	public async reset(interaction: Command.ChatInputInteraction, options: Options) {
 		if (!UserCommand.ClientOwners.includes(interaction.user.id)) {
 			return interaction.reply({ content: 'You cannot use this command.', flags: MessageFlags.Ephemeral });
