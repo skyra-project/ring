@@ -1,6 +1,8 @@
 import { setup as envSetup } from '@skyra/env-utilities';
 import { initializeSentry, setRepository } from '@skyra/shared-http-pieces';
 
+import '@skyra/shared-http-pieces/register';
+
 envSetup(new URL('../../../src/.env', import.meta.url));
 setRepository('ring');
 initializeSentry();
